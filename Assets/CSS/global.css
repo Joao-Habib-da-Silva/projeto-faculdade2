@@ -139,3 +139,84 @@ header a:hover::after {
     transform: translateX(60px);
 }
 
+#menu {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 115vh;
+    position: fixed;
+    z-index: 100;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    text-align: center;
+    background-color: var(--bg);
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--font);
+}
+#mode-mobile {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    display: none;
+    margin-right: 13px;
+    margin-bottom: 33px;
+}
+#menu li:hover {
+    background-color: var(--hover);
+}
+
+#menu-button {
+    display: none;
+    margin-right: 25px;
+    fill: var(--font);
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    header nav {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        transform: translateX(900px);
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #menu.open {
+        transform: translateX(0px);
+    }
+
+    #menu-button {
+        display: flex;
+    }
+
+    .header-dark-and-light-mode {
+        display: none;
+    }
+    #mode-mobile {
+        display: flex;
+    }
+}
