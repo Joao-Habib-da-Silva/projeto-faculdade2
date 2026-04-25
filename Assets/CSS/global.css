@@ -55,3 +55,87 @@ button, input {
     overflow-x: hidden;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 143px;
+    padding: 25px;
+    position: relative;
+    background-color: var(--bg);
+    transform: translateY(-200px);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header.begin {
+    transform: translateY(0px);
+}
+
+header svg {
+    margin-left: 20px;
+    fill: var(--font);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header nav {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header a {
+    margin-right: 25px;
+    position: relative;
+    color: var(--font);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    border-radius: 20px;
+    background-color: var(--hover);
+    scale: 0;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header a:hover {
+    color: var(--hover);
+}
+
+header a:hover::after {
+    scale: 1;
+}
+
+.header-dark-and-light-mode {
+    display: flex;
+    align-items: center;
+    width: 119.7px;
+    height: 58px;
+    padding-left: 10px;
+    position: relative;
+    border-radius: 35px;
+    background-color: var(--font);
+    cursor: pointer;
+}
+
+#header-button-select, #header-button-selector {
+    width: 42px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--bg);
+    cursor: pointer;
+    transform: translateX(0px);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#header-button-select.dark, #header-button-selector.dark {
+    transform: translateX(60px);
+}
+
