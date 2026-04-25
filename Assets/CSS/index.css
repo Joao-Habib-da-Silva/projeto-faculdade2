@@ -1,0 +1,156 @@
+@import url("./global.css");
+
+#container-content-main {
+    height: 100vh;
+    padding-top: 150px;
+
+    text-align: center;
+    color: var(--font);
+}
+
+#container-content-main h1 {
+    font-family: "Bebas Neue";
+    font-size: 91.5px;
+
+    transform: translateY(-250px);
+    opacity: 0;
+    transition: 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#container-content-main h1.begin {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#container-content-main p {
+    width: 981px;
+
+    font-family: "Roboto";
+    font-size: 35px;
+
+    transform: translateX(-500px);
+    transition: 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#container-content-main p.begin {
+    transform: translateX(0px);
+}
+
+#container-text-main {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#container-content-main button {
+    width: 268px;
+    height: 100px;
+
+    border: none;
+    border-radius: 21px;
+    background-color: var(--font);
+    color: var(--bg);
+
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    scale: 1;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#container-content-main button:hover {
+    scale: 1.1;
+}
+
+#container-content-second {
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#container-content-second p {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--font);
+}
+
+#container-content-second img {
+    width: 500px;
+    height: 500px;
+
+    border-radius: 15px;
+}
+
+#container-content-second-second-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 720px) {
+    #container-content-main {
+        padding-top: -150px;
+    }
+
+    #container-content-main h1 {
+        font-size: 47.13px;
+    }
+
+    #container-content-main p {
+        margin-left: 50px;
+        margin-right: 50px;
+
+        font-size: 22.69px;
+    }
+
+    #container-content-main button {
+        width: 181px;
+        height: 67.54px;
+
+        border-radius: 14.18px;
+
+        font-size: 16.21px;
+    }
+
+    #container-content-second {
+        display: flex;
+        align-items: center;
+
+        width: 100vw;
+    }
+
+    #container-content-second p {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 70px;
+
+        text-align: center;
+    }
+
+    #container-content-second-second-part {
+        display: none;
+    }
+
+    #container-content-second-second-part img {
+        display: none;
+    }
+}
