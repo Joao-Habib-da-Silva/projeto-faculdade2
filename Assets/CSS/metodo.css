@@ -1,0 +1,144 @@
+@import url("./global.css");
+
+html {
+    overflow-y: hidden;
+}
+
+#container-caixa-search {
+    display: flex;
+    align-items: center;
+
+    width: 466px;
+    height: 70px;
+    margin-top: 57px;
+    margin-left: 64px;
+
+    border-radius: 29px;
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+#container-caixa-search-lupa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15%;
+    height: 100%;
+
+    border-radius: 29px 0px 0px 29px;
+
+    cursor: pointer;
+}
+
+#container-caixa-search-lupa svg {
+    width: 30px;
+    height: 30px;
+
+    scale: 1;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#container-caixa-search-lupa svg:hover {
+    scale: 1.1;
+}
+
+#input-search {
+    width: 85%;
+    height: 100%;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: 0px 29px 29px 0px;
+
+    background-color: var(--font);
+    color: var(--bg);
+
+    font-size: 24px;
+}
+
+#container-info {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 739px;
+    padding-left: 50px;
+}
+
+#container-info-img {
+    width: 576px;
+    height: 576px;
+    margin-top: 30px;
+    margin-right: 64px;
+
+    border-radius: 30px;
+    background-color: var(--font);
+}
+#container-info-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+#container-info-desc {
+    width: 680px;
+    height: 535px;
+    margin-top: 59px;
+    margin-right: 124px;
+
+    padding: 50px;
+
+    border-radius: 17px;
+    background-color: var(--font);
+    color: var(--bg);
+}
+#container-info-desc h1 {
+    font-size: 36px;
+    font-family: "Bebas Neue";
+}
+#container-info-desc p {
+    margin-bottom: 25px;
+}
+#container-info-desc p, li {
+    font-size: 24px;
+    font-family: "Roboto";
+}
+#container-info-desc h2 {
+    font-size: 30px;
+    font-family: "Roboto";
+}
+@media (max-width: 750px) {
+    html {
+        overflow-y: visible;
+    }
+
+    #container-info {
+        display: block;
+
+        min-height: 200vh;
+        padding-left: 0px;
+    }
+
+    #container-info-desc {
+        width: 450px;
+        height: 500px;
+        margin-top: 67px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #container-info-img {
+        width: 450px;
+        margin-left: 20px;
+        height: 500px;
+    }
+
+    #container-caixa-search {
+        width: 350px;
+        height: 52px;
+        margin-left: 20px;
+
+        border-radius: 21px;
+    }
+}
