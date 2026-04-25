@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html.open {
+    overflow-y: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button, input {
+    outline: none;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../Fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+    --bg: #b7e4c7;
+    --font: #081C15;
+    --hover: #A7C957;
+}
+
+:root.dark {
+    --bg: #1b4332;
+    --font: #E9F5DB;
+    --hover: #588157;
+}
+
+#container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--font);
+    overflow-x: hidden;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
