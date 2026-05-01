@@ -119,21 +119,19 @@ html {
         min-height: 200vh;
         padding-left: 0px;
     }
-
     #container-info-desc {
-        width: 450px;
-        height: 500px;
+        width: 90%;
+        height: 600px;
         margin-top: 67px;
         margin-left: 20px;
         margin-right: 20px;
     }
-
+ 
     #container-info-img {
-        width: 450px;
+        width: 90%;
         margin-left: 20px;
         height: 500px;
     }
-
     #container-caixa-search {
         width: 350px;
         height: 52px;
