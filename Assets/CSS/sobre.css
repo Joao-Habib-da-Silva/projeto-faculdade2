@@ -1,1 +1,133 @@
 @import url("./global.css");
+.sobre {
+    width: 100%;
+    min-height: 100vh;
+}
+.sobre p {
+    font-family: "Roboto";
+}
+.sobre h1 {
+    font-family: "Bebas Neue";
+}
+#sobre1 {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+}
+#sobre1-texto, #sobre1-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+#sobre1-img img {
+    width: 100%;
+}
+#sobre1-texto {
+    justify-content: center;
+}
+#sobre1-texto p {
+    width: 600px;
+    font-size: 36px;
+}
+.sobre-topicos {
+    width: 440px;
+    background-color: var(--font);
+    color: var(--bg);
+    height: 440px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+    scale: 1;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+.sobre-topicos:hover {
+    scale: 1.1;
+}
+#sobre-topicos-sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+}
+.sobre-topicos h1 {
+    width:100%;
+    margin-top: 70px;
+    margin-bottom: 119px;
+    font-size: 36px;
+}
+.sobre-topicos p {
+    margin-left: 21px;
+    margin-right: 21px;
+    font-size: 28px;
+ 
+}
+#sobre-final {
+    display: flex;
+    align-items: center;
+}
+#sobre-final-centro-vertical {
+    width: 100%;
+    text-align: center;
+}
+#sobre-final-centro-vertical h1 {
+    font-size: 90px;
+    margin-bottom: 119px;
+}
+#sobre-final-centro-vertical p {
+    font-size: 48px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+@media (max-width:750px) {
+    #sobre1 {
+        display: block;
+        width: 100%;
+    }
+    #sobre1-texto {
+        width: 100%;
+    }
+    #sobre1-texto p{
+        font-size: 24px;
+        text-align: center;
+        margin-left: 44px;
+        margin-right: 44px;
+        margin-top: 147px;
+    }
+    #sobre1 img {
+        display: none;
+    }
+    #sobre-topicos-sessao {
+        display: grid;
+        height: 150vh;
+    }
+    .sobre-topicos{
+        width: 265px;
+        height: 265px;
+    }
+    .sobre-topicos h1 {
+        font-size: 22px;
+        margin-bottom: 70px;
+        margin-top: 31px;
+    }
+    .sobre-topicos p {
+        font-size: 17px;
+    }
+    #sobre-final {
+        display: block;
+    }
+    #sobre-final h1 {
+        font-size: 45px;
+        margin-top: 264px;
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+    #sobre-final p {
+        font-size: 24px;
+        margin-left: 54px;
+        margin-right: 54px;
+    }
+ 
+}
